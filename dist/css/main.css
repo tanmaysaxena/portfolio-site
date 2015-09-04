@@ -129,9 +129,7 @@ Window Build landing page */
   font-weight:500;
 }
 .blog-resume:hover{
-  color: #00adef !important;
-  padding-bottom:5px;
-  border-bottom:3px solid #00adef;
+  color: #000 !important;
 }
 a{
   text-decoration: none;
