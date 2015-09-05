@@ -1,11 +1,41 @@
+
+
 /* Space out content a bit */
 body {
-  overflow-y:hidden;
-  background:url(../images/bg2.jpg) no-repeat;
+  overflow-y:auto;
   background-size:cover;
   background-position:center;
-  font-family:'Lato', 'Arial', 'Helvetica', sans-serif;
+  font-family:'museo', 'Helvetica', 'Arial', sans-serif;
   font-weight:300;
+  text-align: center;
+}
+
+@media screen 
+and (min-width: 668px) { 
+
+  .my-window span.first-name{
+    font-size:24pt !important;
+  }
+  .position{
+    font-size: 14pt !important;
+  }
+  .social-holder{
+    margin-left:-15px;
+  }
+}
+@media screen 
+and (min-width: 200px) 
+and (max-width: 667px) { 
+
+  .my-window span.first-name{
+    font-size:18pt !important;
+  }
+  .position{
+    font-size: 12pt !important;
+  }
+  .social-holder{
+    margin-left:0;
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -85,7 +115,7 @@ body {
 /* Phase 1 Build Website
 Window Build landing page */
 .social.fa{
-  font-size:14pt;
+  font-size:16pt;
   color:#ccc;
   width:20pt;
   height:20pt;
@@ -124,12 +154,14 @@ Window Build landing page */
   font-size:10pt;
 }
 .blog-resume{
-  color: #aaa !important;
-  transition: all .2s;
-  font-weight:500;
+  color: #00aebf !important;
+  transition: all .5s;
+  font-weight:300;
+  font-size:12pt;
 }
 .blog-resume:hover{
   color: #000 !important;
+  font-weight:300;
 }
 a{
   text-decoration: none;
@@ -137,44 +169,55 @@ a{
 a:hover{
   text-decoration:none;
 }
+div.profile-img-holder{
+  margin-top: 50px;
+}
 .my-window{
   overflow:hidden;
   padding:0;
   background:#fff;
   color:#000;
   height:350px;
-  box-shadow:0 0 20px rgba(0, 0, 0, .5);
-  border-radius:3px;
-  margin-top:120px;
+  margin-top:20px;
 }
 .my-window > div:nth-child(1){
   height:100% !important;
-  padding-top:20px;
-}
-.my-window > div:nth-child(2){
-  height:100% !important;
-  background:url(../images/me.jpg);
-  background-size:cover;
-  background-position:center;
 }
 .my-window .social-holder{
-  position:absolute;
   bottom:30px;
 }
-.my-window span.first-name{
-  font-size:24pt;
-  font-weight:900;
-  color:#00adef; 
+.social-holder{
+  padding-top:100px;
+  width:100%;
 }
-.my-window span.last-name{
-  font-size:24pt;
+.my-window span.first-name{
+  font-weight:700 !important;
+  color:#00aebf !important; 
+}
+.position{
+  font-weight: 300;
+}
+.excited-about{
+  line-height:24pt;
+  font-size:12pt;
+  font-weight: 300;
+  color: #00aebf;
+}
+.excited-about a{
+  color: #00aebf;
 }
 .my-window .divider{
-  border-top:3px solid #00adef;
+  border-top:1px solid rgba(0,0,0,0.2);
+}
+.social-head{
+  line-height: 30pt;
+  color: rgba(0,0,0,0.5);
 }
 .temp-footer{
-  margin-top:80px;
-  font-weight:500;
+  padding-top: 30px;
+  font-weight:300;
+  font-size:10pt;
   text-align:center;
+  color: rgba(0,0,0,0.4);
 }
 /* Phase 1 Build Ends */
